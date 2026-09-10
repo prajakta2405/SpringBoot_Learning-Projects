@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class HelthController {
 
+    @GetMapping("/")
+    public String startPage(){
+        return "Welcome to home page";
+    }
+
     @GetMapping("/health")
     public String health(){
         return "running good !";
